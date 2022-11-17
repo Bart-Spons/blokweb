@@ -51,6 +51,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
+
 ## Toegankelijkheidstest 1/2 (week 1)
 
 <details>
@@ -58,29 +59,54 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  - 
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  
+  - De screenreader doet er leest alle links voor die te zien zijn op de mobiele versie ongeacht hoe groot je beeldscherm is. Je ziet op 1200px breedte niet dat er submenu's zijn. Deze worden wel voorgelezen, dit is natuurlijk in eerste instantie heel gek. Voor een blinde is het natuurlijk logisch dat hij/zij deze opties te horen krijgt.
+  
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  
+  - De submenu's zowel laten zien op 1200px als op kleiner formaat. Dat voor zowel blinde als niet blinde gebruikers hier geen verwarring kan ontstaan.
+  
+  
 
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
+  -  Alleen toetsenbord, scrollen met de pijltjes is goed te doen. De tab werkt niet zoals verwacht. Zodra je in de submenu's komt zie je niet meer waar de tab is. Na ongeveer 10 keer op tab te duwen komt deze weer tevoorschijn op het scherm.
+
+
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  
+  - De submenu's zowel laten zien op 1200px als op kleiner formaat. Dat voor de gebruikers hier geen verwarring kan ontstaan.
+  
+  
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Hier korte omschrijving:
+  
+  - Gebruik gemaakt van elastiekjes en een ballon. Elastiekjes was nog te doen omdat het een website was met niet te veel informatie waardoor het overzichtelijk is.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  
+  Hier een omschrijving van hoe het opgelost kan worden:
+  
+  - Zoveel mogelijk informatie op een pagina zetten zodat de gebruiker minder vaak moet doorklikken op de website.
+ 
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
-
+  
+  - Ik heb onder andere kleurenblindheid getest. Mij viel op de de website heel veel rood en zwart bevat. Deze twee kleuren gaat niet goed samen voor kleurenblinden. 
+  
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  
+  - Als het bedrijf rekening wilt houden met kleurenblinden zullen ze een andere kleurencombinatie moeten bedenken in plaats van fel rood en zwart.
 
 </details>
 
