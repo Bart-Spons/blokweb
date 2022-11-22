@@ -3,6 +3,8 @@
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;  
+    margin: 0;
+    padding: 0;
 }
 
 button, summary {
@@ -32,3 +34,146 @@ button, summary {
 
 /* jouw code */
 
+body{
+/*    font-family: helvetica, sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    padding: 1em;
+    border-bottom: 2px solid #e4e4e4;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+main{
+    position: relative;
+    margin-top: 5em;
+   
+}
+
+/*verborgen*/
+h1{
+    position: fixed;
+    left:-999999em;
+    top: 0;
+}
+
+p{
+    color: #6F6464;
+}
+
+
+main section:nth-of-type(1) ul {
+    display:flex;
+  overflow-x:scroll;
+    border-bottom: 2px solid #e4e4e4;
+    width: 100%;
+  scroll-snap-type: x mandatory;
+  overscroll-behaviour: contain;
+    
+
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+
+
+main section:nth-of-type(1) ul li {
+  flex-shrink:0;
+  flex-basis:90%;
+  scroll-snap-align:center;
+  height:8em;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+    
+}
+
+
+main section:nth-of-type(1) ul img{
+    width: 100%;
+    position: relative;
+}
+
+/*kopjes*/
+
+main section:nth-of-type(2) ul {
+    list-style: none;
+    padding: 0;
+    border-bottom: 2px solid #e4e4e4;
+    margin: 8px;
+}
+
+main section:nth-of-type(2) ul li{
+   display: flex;
+    flex-direction: column;
+}
+
+main section:nth-of-type(2) ul li img{
+    width: 100%;
+/*     position: relative;*/
+    text-align: center;
+    order: 100;
+    
+}
+
+main section:nth-of-type(2) ul h2{
+    text-align: center;
+    order: 300;
+}
+
+main section:nth-of-type(2) ul p{
+    text-align: center;
+    font-size: 12.6px;
+    padding: 1em;
+    order: 500;
+}
+
+main section:nth-of-type(2) ul a{
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    width:100%;
+    aspect-ratio:100/60;
+    background-image: url("../images/proces.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+main section:nth-of-type(2) ul a span{
+    position: absolute;
+    justify-content: center;
+/*    margin: 0 auto;*/
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    color: white;
+    background-color: red;
+}
+
+
+
+/*Footer*/
+footer{
+    background-color: #f3f3f3;
+    padding: 0;
+    margin-bottom: -1em;
+}
+
+footer ul{
+    width: 100%;
+/*     position: relative;*/
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+footer p{
+    text-decoration: underline; 
+}
