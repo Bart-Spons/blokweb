@@ -67,6 +67,7 @@ p{
 }
 
 
+/*
 main section:nth-of-type(1) ul {
     display:flex;
   overflow-x:scroll;
@@ -100,6 +101,7 @@ main section:nth-of-type(1) ul img{
     width: 100%;
     position: relative;
 }
+*/
 
 /*kopjes*/
 
@@ -135,16 +137,48 @@ main section:nth-of-type(2) ul p{
     order: 500;
 }
 
-main section:nth-of-type(2) ul a{
+main section:nth-of-type(2) ul li a{
     text-align: center;
     justify-content: center;
     position: relative;
     width:100%;
     aspect-ratio:100/60;
-    background-image: url("../images/proces.png");
     background-size: cover;
     background-position: center center;
 }
+
+
+main section:nth-of-type(2) ul li:nth-of-type(1) a{
+    background-image: url("../images/proces.png");
+}
+
+main section:nth-of-type(2) ul li:nth-of-type(2) a{
+    background-image: url("../images/tostichef.png");
+}
+
+main section:nth-of-type(2) ul li:nth-of-type(3) a{
+    background-image: url("../images/colombia.png");
+}
+
+main section:nth-of-type(2) ul li:nth-of-type(4) a{
+    background-image: url("../images/news.png");
+}
+
+main section:nth-of-type(2) ul li:nth-of-type(5) a{
+    background-image: url("../images/news2.png");
+}
+
+main section:nth-of-type(2) ul li:nth-of-type(6) a{
+    background-image: url("../images/news3.png");
+}
+
+
+
+/*.biplace:nth-of-type(3) .image:nth-child(3)*/
+
+
+
+
 
 main section:nth-of-type(2) ul a span{
     position: absolute;
@@ -177,3 +211,232 @@ footer ul{
 footer p{
     text-decoration: underline; 
 }
+
+
+  
+/******************************/
+/* DE CAROCARROUSEL CONTAINER */
+/******************************/
+
+.caroCarrousel {
+	/* basis waarden die door de hele carrousel gebruikt worden */
+	/* kun je zelf aanpassen */
+	--caroCarrouselMainColor:#333;
+  --caroCarrouselAccentColor:#1b75b3;
+	--caroCarrouselShadeColor:#ddd9;
+
+  position: relative;
+  overflow: hidden; /* om de linkbuttons te verbergen */
+	outline:none;
+}
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+  .caroCarrousel {
+    --caroCarrouselMainColor:#ccc;
+    --caroCarrouselShadeColor:#4449;
+  }
+}
+
+
+/************************************/
+/* de carrousel elementen container */
+.caroCarrousel > ul {
+  margin: 0; padding: 0;
+  list-style: none;
+	display: flex;
+	
+	/* handmatig scrollen is mogelijk */
+	overflow: hidden;
+	
+	/* snappen als er gescrolled wordt - andere helft bij li */
+  scroll-snap-type: inline mandatory;
+  
+  /* smooth scrollen */
+	scroll-behavior: smooth;
+  
+  /* scrollbar zoveel mogelijk verbergen */
+  -webkit-overflow-scrolling: touch; /* voor iOS*/
+  -ms-overflow-style: none; /* voor IE */
+	scrollbar-width: none; /* voor firefox */
+}
+
+.caroCarrousel > ul::-webkit-scrollbar {
+  /* scrollbar zoveel mogelijk verbergen */
+  display: none; /* voor chrome, safari en edge*/
+}
+
+
+/**************************/
+/* de carrousel elementen */
+.caroCarrousel > ul li {
+  flex-basis: 100%;
+  flex-shrink: 0;
+  /* snappen als er gescrolled wordt - andere helft bij ul */
+	scroll-snap-align:center;
+}
+
+
+/**********************************/
+/* de carrousel elementen content */
+
+/* de stijlen voor jouw content hier */
+.caroCarrousel > ul li > img {
+  display: block;
+  width: 100%;
+}
+
+
+/****************/
+/* DE BOLLETJES */
+/****************/
+
+/* de bolletjes container */
+.caroCarrousel nav ul {
+  position: absolute;
+	left: 50%; 
+	bottom: 0;
+	margin: 0;
+  padding: 0 0 .5em;
+  list-style: none;
+	
+	display: flex;
+/* 	flex-wrap:wrap; */
+  justify-content: center;
+  gap:.4em;
+    width: 1em;
+    height: 1em;
+}
+
+/* een bolletje container */
+.caroCarrousel > nav li {
+	flex-basis: 1.2em;
+	aspect-ratio: 1/1;
+}
+
+/* de bolletjes */
+.caroCarrousel > nav a {
+  display: block;
+  width:100%;
+  height:100%;
+  
+  text-decoration: none;
+	color: var(--caroCarrouselMainColor);
+  background-color: var(--caroCarrouselShadeColor);
+	border-radius: 50%;
+  outline: none;
+	box-shadow: inset 0 0 0 1px currentColor;
+  
+  transition: 0.5s;
+}
+
+.caroCarrousel > nav a:hover,
+.caroCarrousel > nav a:focus {
+  color: var(--caroCarrouselAccentColor);
+}
+
+.caroCarrousel > nav a.current {
+  background-color: currentColor;
+}
+
+
+/****************************/
+/* PREV EN NEXT LINKBUTTONS */
+/****************************/
+.caroCarrousel > a {
+  position: absolute;
+  width: 3em;
+  aspect-ratio:1/1;
+	top: calc(50% - 1.5em);
+  
+  color: var(--caroCarrouselMainColor);
+  background-color: var(--caroCarrouselShadeColor);
+  outline: none;
+	box-shadow: inset 0 0 0 1px currentColor;
+	
+  display:grid;
+  place-items:center;
+  
+  transition: 0.5s;
+}
+
+/* initieel staan de links "buiten beeld" */
+.caroCarrousel > a[href="previous"] {
+  left:-3.5em;
+}
+.caroCarrousel > a[href="next"] {
+  right: -3.5em;
+}
+
+/* bij hover en focus schuiven de links in beeld */
+.caroCarrousel:hover > a[href="previous"],
+.caroCarrousel:focus-within > a[href="previous"] {
+  left:.5em;
+}
+.caroCarrousel:hover > a[href="next"],
+.caroCarrousel:focus-within > a[href="next"] {
+  right:.5em;
+}
+
+/* prev en next linkbuttons pijltjes */
+.caroCarrousel > a::before,
+.caroCarrousel > a::after {
+  content: "";
+  position: absolute;
+  width: 1em; height: 4px;
+  background-color: currentColor;
+}
+
+.caroCarrousel > a[href=previous]::before {
+	transform-origin: 2px center;
+	transform: translateY(0) rotate(45deg);
+}
+.caroCarrousel > a[href=previous]::after {
+	transform-origin: 2px center;
+	transform: translateY(0) rotate(-45deg);
+}
+
+.caroCarrousel > a[href=next]::before {
+	transform-origin: calc(100% - 2px) center;
+	transform: translateY(0) rotate(45deg);
+}
+.caroCarrousel > a[href=next]::after {
+	transform-origin: calc(100% - 2px) center;
+	transform: translateY(0) rotate(-45deg);
+}
+
+.caroCarrousel > a:hover,
+.caroCarrousel > a:focus {
+  color: var(--caroCarrouselAccentColor);
+}
+
+#bolletjesAndLinkButtons ul li section{
+ position: relative;
+    width: 100%;
+}
+
+#bolletjesAndLinkButtons ul li section img{
+ width: 100%;
+}
+
+#bolletjesAndLinkButtons ul li section h2{
+ position: absolute;
+    top: 0;
+    color: white;
+    margin: 1em;
+}
+
+ #bolletjesAndLinkButtons ul li section a{
+ position: absolute;
+    color: white;
+    background-color: red;
+    display: block;
+    top: 2em;
+    margin: 2em;
+}
+
+#bolletjesAndLinkButtons ul li p{
+    margin: 1em 1em 2em 1em;
+}
+
+
