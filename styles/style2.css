@@ -1,0 +1,52 @@
+section {
+	max-width:24em;
+	margin:0 auto;
+}
+
+ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+li {
+	display:flex;
+	flex-wrap:wrapa;
+	column-gap:1em;
+	
+	justify-content:space-between;
+	align-items:center;
+}
+
+li h4 {
+	width:100%;
+	font-size:2em;
+	margin:0;
+}
+
+li p {
+	margin:0;
+}
+
+li div:nth-of-type(2) p {
+	text-align:right;
+}
+
+li img {
+	display:none;
+}
+
+@media (min-width:44em) {
+	section {
+		max-width:50em;
+	}
+	
+	li h4 {
+		width:unset;
+	}
+	
+	li img {
+		display:block;
+		width:8em;
+	}
+}

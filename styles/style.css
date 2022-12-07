@@ -1,54 +1,3 @@
-/**************/
-/* CSS REMEDY */
-/**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
-    margin: 0;
-    padding: 0;
-}
-
-button, summary {
-	cursor: pointer;
-}
-
-
-
-
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
-}
-
-
-
-
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
-
-body{
-/*    font-family: helvetica, sans-serif;*/
-    font-family: 'Montserrat', sans-serif;
-}
-
-header{
-    padding: 1em;
-    border-bottom: 2px solid #e4e4e4;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    background-color: white;
-    z-index: 1;
-}
-
 main{
     position: relative;
     margin-top: 5em;
@@ -193,24 +142,6 @@ main section:nth-of-type(2) ul a span{
 
 
 
-/*Footer*/
-footer{
-    background-color: #f3f3f3;
-    padding: 0;
-    margin-bottom: -1em;
-}
-
-footer ul{
-    width: 100%;
-/*     position: relative;*/
-    text-align: center;
-    list-style: none;
-    padding: 0;
-}
-
-footer p{
-    text-decoration: underline; 
-}
 
 
   
@@ -285,6 +216,18 @@ footer p{
   display: block;
   width: 100%;
 }
+
+.caroCarrousel > ul li section figure{
+    width: 100%;
+    height: 12.5em;
+}
+
+.caroCarrousel > ul li section figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 
 /****************/
@@ -440,3 +383,41 @@ footer p{
 }
 
 
+
+@media screen and (min-width: 44em) {
+  main section:last-of-type ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: center;
+  }
+  
+  main section:last-of-type li{
+    width: 49%;
+  }
+  
+  footer{
+    flex-direction: row;
+    align-items: top;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  main section:last-of-type ul{
+    /* display: flex;
+    flex-wrap: wrap; */
+    gap: 2%;
+    /* justify-content: center; */
+  }
+  
+  main section:last-of-type li{
+    width: 32%;
+  }
+
+  main section:last-of-type li:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}

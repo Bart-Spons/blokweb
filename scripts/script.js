@@ -1,3 +1,37 @@
+
+/******************************/
+/* menu openen de MENU button */
+/******************************/
+
+/* JOUW CODE HIER - stap 4 */
+
+// stap 1: zoek de menu-button op en sla die op in een variabele
+var openButton = document.querySelector("header > button");
+
+// stap 2: laat de menu-button luisteren naar kliks en voer dan een functie uit
+openButton.addEventListener("click", openMenu);
+
+// stap 3: voeg in de functie een class toe aan de nav
+function openMenu() {  
+  // zoek de nav op
+  var deNav = document.querySelector("header nav");
+  // voeg class toe aan nav
+  deNav.classList.toggle("toon-menu");
+}
+
+
+/**********************************/
+/* bonus: menu sluiten met escape */
+/**********************************/
+window.addEventListener("keydown", handleKeydown);
+
+function handleKeydown(event) {
+  if (event.key == "Escape") {
+    var deNav = document.querySelector("nav");
+    deNav.classList.remove("toonMenu");
+  }
+}
+
 // JavaScript Document
 function createCaroCarrousel(carrouselID) {
 	let carrousel = document.querySelector("#"+carrouselID);
@@ -6,6 +40,7 @@ function createCaroCarrousel(carrouselID) {
   let bolletjes = carrousel.querySelectorAll(":scope > nav a");
   let linkButtons = carrousel.querySelectorAll(":scope > a");
 	
+  
   
   /****************/
 	/* DE BOLLETJES */
@@ -171,3 +206,47 @@ function createCaroCarrousel(carrouselID) {
   //je kunt hier ook meerdere carrousellen activeren
 })();
   
+ /*****************/
+	/* AUTO SCROLLEN */
+	/*****************/
+	let autoScrollInterval = 4000;
+	let autoScrollTimer;
+	// auto scroll starten
+	function startAutoScroll() {
+		// de class "autoScrolling" toevoegen aan de carrousel
+		carrousel.classList.add("autoScrolling");
+		
+		// een timer aanzetten
+		autoScrollTimer = setInterval(function(){
+		  // als de timer afgaat naar het volgende element gaan
+		  goToElement("next");
+		}, autoScrollInterval);
+	   
+	  }
+	
+		// auto scroll stoppen
+	  function stopAutoScroll() {
+		// de class "autoScrolling" verwijderen van de carrousel
+		carrousel.classList.remove("autoScrolling");
+		// de timer stopzetten
+		clearInterval(autoScrollTimer);
+	  }
+	
+		// auto scroll initieren en activeren
+	  function iniAutoScroll() {
+		// de play button naar kliks laten luisteren
+		let playButton = carrousel.querySelector(":scope > button");
+		playButton.addEventListener("click", function() {
+		  // als de carrousel de class "autoScrolling" heeft dan stoppen
+		  if(carrousel.classList.contains("autoScrolling")) {
+			stopAutoScroll();
+		  }
+		  // anders starten
+		  else {
+			startAutoScroll();
+		  }
+		});
+			
+		// auto scroll initieel starten
+			startAutoScroll();
+		}
