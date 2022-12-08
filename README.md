@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Rood
 
   #### Je focus:
-  surface plane
+  responsive plane
  
 </details>
 
@@ -44,7 +44,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/website-coffeecompany.png" width="375px" alt="homepage van de coffeecompany">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  coffeecompany -> locaties  
   <img src="readme-images/2epagina.png" width="375px" alt="coffeecompany locaties">
  
 </details>
@@ -122,6 +122,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### dynamisch deel (bijv menu): 
   
+  <img src="readme-images/hamburgermenu.png" width="375px" alt="breakdown het hamburgermenu">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   
@@ -160,7 +161,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
+  - 
   - punt 2
   - nog een punt
   - ...
@@ -177,13 +178,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  
+  - tekst op slider
+  - Footer gemaakt
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Ruben van Vliet      | Ruud Jansen          | Bart Spons    |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
@@ -193,10 +196,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Responsive moet nog
+  - Tweede pagina moet nog
+  - Hamburgermenu moet nog
+  - Hover moet nog
 
 </details>
 
@@ -213,27 +216,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  De kopjes waren prima te bedienen met de screanreader. De links zijn allemaal prima te horen, ook het hamburgermenu wordt mooi meegenomen door de screanreader.
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Het hamburgermenu is lastig te bedienen met muis en toetsenbord.
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  De website is overzichtelijk en prima te lezen met de shock. Als je de website wilt bedienen zijn de kleine links onderaan de footer lastig op te klikken aangezien je vingers aan het trillen zijn door het shock apparaat.
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Door de felle kleur rood is de website door de meeste brillen goed te onderscheiden van de rest.
 
 </details>
 
@@ -247,8 +242,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Slider ging moeizaam, de tekst die erop staat veranderd nog niet als er een afbeelding veranderd.
 
+<img src="readme-images/week4-1.png" width="375px" alt="screenshot van de hele pagina">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
