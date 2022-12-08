@@ -5,6 +5,11 @@
     box-sizing:border-box;  
       margin: 0;
       padding: 0;
+
+  }
+
+  header{
+    text-transform: uppercase;
   }
   
   button, summary {
@@ -25,6 +30,11 @@
   :focus{
     border-color: orange;
   }
+
+  h2{
+      font-size: 1.3em;
+  }
+
   
   iframe{
     width: 100%;
@@ -52,7 +62,8 @@
   
   body{
   /*    font-family: helvetica, sans-serif;*/
-      font-family: 'Montserrat', sans-serif;
+      /* font-family: 'Montserrat', sans-serif; */
+      font-family: 'Noto Sans', sans-serif;
   }
   
   header{
@@ -81,6 +92,11 @@
     transform: translateX(-100%);
   }
   
+header a svg{
+    background-color: white;
+    display: none;
+}
+
   .toon-menu{
     transform: translateX(0%);
     
@@ -97,6 +113,10 @@
     border-bottom: 2px solid #e4e4e4;
   }
   
+  header li:last-of-type{
+      margin-top: 1em;
+  }
+
   header li:first-of-type{
     background: transparent;
   
@@ -105,6 +125,7 @@
   header li form input{
     width: 100%;
     padding: 0.5em;
+    border-radius: 1em;
   }
   
   header button{
@@ -134,6 +155,10 @@ footer section{
   margin-bottom: 3em;
 }
 
+footer section a{
+    text-decoration: underline;
+}
+
 footer section:last-of-type ul a{
   width: 2em;
   height: auto;
@@ -153,18 +178,32 @@ footer section form{
 
 footer section form input{
   height: 2em;
+  text-align: center;
+  padding: 1em;
 }
 
 footer section form button{
   background-color: black;
   color: white;
-  padding: 1em;
-  height: 2em;
+  height: 2.2em;
+ width: 5em;
   
 }
 
-footer h2,p{
+footer h2,a{
   text-align: center;
+}
+
+footer section:nth-of-type(2){
+    margin-top: 3em
+}
+
+footer section:nth-of-type(2) section{
+    display: flex;
+}
+
+footer section:nth-of-type(2) section ul:last-of-type{
+    flex-direction: column;
 }
 
 /* Media query */

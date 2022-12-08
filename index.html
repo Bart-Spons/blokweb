@@ -38,8 +38,16 @@
                 <li><a href="#">Locaties</a></li>
                 <li><a href="#">Over ons</a></li>
                 <li><a href="#">Nieuws</a></li>
+                <li><a href="#">log in</a></li>
 
             </ul>
+            <a><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.677px" height="19.678px"
+                    viewBox="0 0 19.677 19.678" enable-background="new 0 0 19.677 19.678" xml:space="preserve">
+                    <path
+                        d="M19.384,17.971l-3.217-3.217c1.248-1.556,1.999-3.526,1.999-5.671C18.166,4.075,14.092,0,9.083,0C4.075,0,0,4.075,0,9.083 c0,5.009,4.075,9.084,9.083,9.084c2.145,0,4.115-0.751,5.671-1.999l3.216,3.217c0.195,0.195,0.451,0.293,0.707,0.293 s0.512-0.098,0.707-0.293C19.774,18.994,19.774,18.361,19.384,17.971z M2,9.083C2,5.177,5.177,2,9.083,2 c3.905,0,7.083,3.177,7.083,7.083c0,3.906-3.178,7.084-7.083,7.084C5.177,16.167,2,12.989,2,9.083z">
+                    </path>
+                </svg></a>
         </nav>
 
         <button>
@@ -73,7 +81,11 @@
                         </figure>
 
                         <h2>Barista worden</h2>
+                        <p>Word barista bij de CC. De leukste (bij-)baan van de stad! Klik op de link en solliciteer
+                            direct.
+                        </p>
                         <a>Solliciteren</a>
+
                     </section>
 
 
@@ -116,6 +128,7 @@
                         </figure>
                         <h2>De eerste cc op zuid!</h2>
                         <a>Kom langs</a>
+                        <p></p>
                     </section>
 
 
@@ -156,7 +169,7 @@
                     <p>De stappen die je moet zetten om koffie te produceren zijn op zich niet moeilijk. Je moet ze ...
                     </p>
 
-                    <a href="#"><span>Proces</span></a>
+                    <a href="#"><span data-txt="Proces" data-hvr="Lees meer"></span></a>
 
                 </li>
 
@@ -166,7 +179,7 @@
                     <p>In de Meet the Makers serie geven we je een kijkje achter de Coffeecompany schermen. Deze kee...
                     </p>
 
-                    <a href=""><span>Tosti</span></a>
+                    <a href=""><span data-txt="Tosti" data-hvr="Lees meer"></span></a>
 
 
                 </li>
@@ -177,7 +190,7 @@
                     <h2>field trip - colombia</h2>
                     <p>Eind november vertrokken Roland en Jasper naar Colombia op zoek naar nieuwe koffies, partners...
                     </p>
-                    <a href=""><span>Colombia</span></a>
+                    <a href=""><span data-txt="Colombia" data-hvr="Lees meer"></span></a>
                 </li>
 
                 <!-- 4e -->
@@ -185,7 +198,7 @@
                     <h2>nu open: cc las palmas</h2>
                     <p>Hallo Rotterdam! Onze nieuwste (en vierde!) winkel in 010 is geopend op de Kop van Zuid: Coff...
                     </p>
-                    <a href=""><span>News</span></a>
+                    <a href=""><span data-txt="News" data-hvr="Lees meer"></span></a>
 
 
                 </li>
@@ -197,7 +210,7 @@
                     </h2>
                     <p>Bij Coffeecompany* betaal je niet langer extra voor plantaardige melk. Je vertrouwde Latte to...
                     </p>
-                    <a href=""><span>News</span></a>
+                    <a href=""><span data-txt="News" data-hvr="Lees meer"></span></a>
                 </li>
 
                 <!-- 6e -->
@@ -208,7 +221,7 @@
                     <p>Hallo Tilburg! In het spiksplinternieuwe stadshart openen wij dit najaar Coffeecompany Emmapa...
 
                     </p>
-                    <a href=""><span>News</span></a>
+                    <a href=""><span data-txt="News" data-hvr="Lees meer"></span></a>
                 </li>
 
 
@@ -223,23 +236,26 @@
     <footer>
         <section>
             <h2>Werken bij coffeecompany</h2>
-            <p>Bekijk de vacature</p>
+            <a href="">Bekijk de vacature</a>
             <h2>Legal</h2>
-            <p>Terms & Conditions & Cookie & Privacy Beleid</p>
+            <a href="">Terms & Conditions & Cookie & Privacy Beleid</a>
         </section>
         <section>
             <h2>Coffee HQ address</h2>
-            <ul>
-                <li>info@coffeecompany.nl</li>
-                <li>Tel 020 4282248</li>
-            </ul>
-            <ul>
-                <li>Coffeecompany HQ</li>
-                <li>Zeeburgerpad 13</li>
-                <li>1018 AH Amsterdam</li>
-                <li>Postbus 16953,</li>
-                <li>1001 RL Amsterdam</li>
-            </ul>
+            <section>
+                <ul>
+                    <li>info@coffeecompany.nl</li>
+                    <li>Tel 020 4282248</li>
+                </ul>
+                <ul>
+                    <li>Coffeecompany HQ</li>
+                    <li>Zeeburgerpad 13</li>
+                    <li>1018 AH Amsterdam</li>
+                    <li>Postbus 16953,</li>
+                    <li>1001 RL Amsterdam</li>
+                </ul>
+            </section>
+
         </section>
         <section>
             <h2>Bezoek ons op</h2>
@@ -249,7 +265,7 @@
                 <li><a href=""><img src="/images/insta_icon.svg"></a></li>
             </ul>
             <form>
-                <input type="text">
+                <input type="text" placeholder="Nieuwsbrief email">
                 <button>Verstuur</button>
             </form>
         </section>

@@ -16,6 +16,7 @@ p{
 }
 
 
+
 /*
 main section:nth-of-type(1) ul {
     display:flex;
@@ -52,7 +53,13 @@ main section:nth-of-type(1) ul img{
 }
 */
 
+
+
+
+
 /*kopjes*/
+
+
 
 main section:nth-of-type(2) ul {
     list-style: none;
@@ -91,11 +98,18 @@ main section:nth-of-type(2) ul li a{
     justify-content: center;
     position: relative;
     width:100%;
-    aspect-ratio:100/60;
-    background-size: cover;
+    aspect-ratio:100/55;
+    background-size: 100% auto;
     background-position: center center;
+    transition: .3s;
+
+    display:grid;
+    place-content: center;
 }
 
+main section:last-of-type li:hover a{
+  background-size: 110% auto;
+}
 
 main section:nth-of-type(2) ul li:nth-of-type(1) a{
     background-image: url("../images/proces.png");
@@ -121,7 +135,13 @@ main section:nth-of-type(2) ul li:nth-of-type(6) a{
     background-image: url("../images/news3.png");
 }
 
+main section:first-of-type ul li section p{
+  display: none;
+} 
 
+main section:first-of-type ul li p{
+  display: block;
+} 
 
 /*.biplace:nth-of-type(3) .image:nth-child(3)*/
 
@@ -130,14 +150,31 @@ main section:nth-of-type(2) ul li:nth-of-type(6) a{
 
 
 main section:nth-of-type(2) ul a span{
-    position: absolute;
-    justify-content: center;
-/*    margin: 0 auto;*/
-    top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-    color: white;
-    background-color: red;
+  display:block;
+  color: white;
+  background-color: red;
+  padding:.25em;
+}
+
+main section:last-of-type li:nth-of-type(3) a span{
+  background-color: black;
+}
+
+main section:last-of-type li:last-of-type a span{
+  background-color: orange;
+}
+
+main section:nth-of-type(2) ul a span::after {
+  content:attr(data-txt);
+}
+
+
+main section:nth-of-type(2) ul li a:hover span {
+  background-color: black;
+}
+
+main section:nth-of-type(2) ul a:hover span::after {
+  content:attr(data-hvr);
 }
 
 
@@ -384,7 +421,17 @@ main section:nth-of-type(2) ul a span{
 
 
 
+
+
 @media screen and (min-width: 44em) {
+  .caroCarrousel > ul li section figure {
+    
+    height: 26em;
+}
+main nav{
+  display: none;
+}
+  
   main section:last-of-type ul{
     display: flex;
     flex-wrap: wrap;
@@ -395,6 +442,20 @@ main section:nth-of-type(2) ul a span{
   main section:last-of-type li{
     width: 49%;
   }
+
+  main section:first-of-type ul li section p{
+    display: block;
+    position: absolute;
+    color: white;
+    
+    display: block;
+    top: 5em;
+    margin: 2em
+  } 
+
+  main section:first-of-type ul li p{
+    display: none;
+  } 
   
   footer{
     flex-direction: row;
@@ -403,10 +464,58 @@ main section:nth-of-type(2) ul a span{
 }
 
 @media screen and (min-width: 60em) {
+  header{
+    position: absolute;
+    padding: 1.5em;
+    margin: 0 1em 0 1em;
+  }
+  
+  header nav{
+    position: static;
+    transform: translateX(0%);
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  header nav ul{
+    flex-direction: row;
+    display: flex;
+    height: unset;
+    margin-right: auto;
+    justify-content: center;
+    background-color: white;
+    gap: 2em;
+  }
+
+  header nav ul li{
+    width: auto;
+    padding: 0;
+    border-bottom: 0;
+  }
+  header nav ul form{
+    display: none;
+  }
+
+  header nav ul li:last-of-type{
+    margin: 0 0 0 5em;
+    justify-content:end;
+}
+
+  header button{
+    display: none;
+  }
+
+  header a svg{
+    display: block;
+  }
+
+  
   main section:last-of-type ul{
     /* display: flex;
     flex-wrap: wrap; */
     gap: 2%;
+    margin: 2em 5em 2em 5em;
+    border-bottom: 0;
     /* justify-content: center; */
   }
   
@@ -414,10 +523,4 @@ main section:nth-of-type(2) ul a span{
     width: 32%;
   }
 
-  main section:last-of-type li:hover{
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1);
-    cursor: pointer;
-  }
 }
