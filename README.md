@@ -90,9 +90,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving:
   
-  - Gebruik gemaakt van elastiekjes en een ballon. Elastiekjes was nog te doen omdat het een website was met niet te veel informatie waardoor het overzichtelijk is.
+  - Gebruik gemaakt van elastiekjes en een ballon. Elastiekjes was nog te doen omdat het een website was met niet te veel informatie waardoor het overzichtelijk is. De website bedienen met schock was over het algemeen nog wel te doen, alleen de kleine icoontjes zoals in de footer waren moeilijk te bedienen. 
 
-  
+  <img src="readme-images/week1test1.png" width="375px" alt="shock">
+  <img src="readme-images/ballon1.png" width="375px" alt="ballon">
+  <img src="readme-images/elastiekjes1.png" width="375px" alt="elastiekjes">
+
   Hier een omschrijving van hoe het opgelost kan worden:
   
   - Zoveel mogelijk informatie op een pagina zetten zodat de gebruiker minder vaak moet doorklikken op de website.
@@ -180,7 +183,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   
   - tekst op slider
-  - Footer gemaakt
+  - Footer gemaakt, middelste section is nog niet goed. De twee ul staan onder elkaar en moeten naast elkaar komen te staan.
+  - Header is nog leeg
 
 
   ### Agenda voor meeting
@@ -248,6 +252,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   Slider ging moeizaam, de tekst die erop staat veranderd nog niet als er een afbeelding veranderd.
+  Header is bijna helemaal bijgewerkt. Zowel voor desktop versie als voor mobiel formaat.
 
 <img src="readme-images/week4-1.png" width="375px" alt="screenshot van de hele pagina">
 
@@ -258,7 +263,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | ---            | ---                | ---          | 
   |- Link zoekbalk | - Tekst in een grid| - een slider | 
   |- Orderen valk  | Alleen horizontaal | - Menu balk  |
-  |                | - Aparte body      |              | 
+  |                | - Aparte body      | - tekst op slider| 
 
 
   ### Verslag van meeting
@@ -267,6 +272,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Tekst/elementen beter stijlen doormiddel van grid
   - Flexbox verbeteren/ elementen verplaatsen
   - Links naar andere positie op een website
+  - Opmaak voor de slider
 
 </details>
 
@@ -280,19 +286,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/eind1.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/eind2.png" width="275px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Korte omschrijving met plaatjes:
+  - Ik ben heel blij met mijn navigatie balk. Beide lijken op de menubalk van de originele website. Het hamburger menu die uitklapt over een deel van de pagina en de desktop versie die elementen links midden en rechts heeft uitgelijnt is ook gelukt.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/nav.png" width="375px" alt="top">
+
+  - Responsive maken van de website was het meeste werk bij de section van de zes kopjes. Deze gaan van drie naar twee naar een kopjes per rij. Hier zit ook een hover op. Dit heb ik allemaal geleerd tijdens de afgelopen weken.
+
+  <img src="readme-images/main_section.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  - De slider vond ik lastig. Als de slider responsive wordt dan gaat de tekst van onder de afbeelding op de afbeelding staan. Dit is mij gelukt maar de perfecte opmaak vond ik lastig. De slider op de echte website van de Coffeecompany is niet volledige breedte. De slider namaken zoals op de website is mij niet helemaal gelukt.
+
+  <img src="readme-images/slider1.png" width="375px" alt="slider">
 </details>
 
 
@@ -306,8 +320,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://www.geeksforgeeks.org/how-to-place-text-on-image-using-html-and-css/
+  2. https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+  3. https://codepen.io/shooft/pen/PoaVxVZ?editors=1010 
 
 </details>
