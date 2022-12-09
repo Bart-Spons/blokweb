@@ -5,7 +5,6 @@
     box-sizing:border-box;  
       margin: 0;
       padding: 0;
-
   }
 
   :root{
@@ -14,11 +13,11 @@
     --header-nav:#eee;
     --header-li:white;
     --header-ul:white;
+    --header-bg:white;
     --header-button:white;
     --p-color:#6F6464;
     --a-color:black;
     --focus-border-color:orange;
-  
     --footer-bg:#f3f3f3;
     --footer-button-bg:black;
     --footer-button-color:white;
@@ -26,6 +25,10 @@
 
   :focus{
     border-color:var(--focus-border-color);
+  }
+
+  a:active{
+    color: purple;
   }
 
 /*verborgen*/
