@@ -1,52 +1,117 @@
-section {
+/* Overizcht van de gebruikte kleuren */
+:root{
+  --main-li-border:grey;
+  --main-h2:white;
+  --main-h2-bg:black;
+  --main-li-button:black;
+  --main-li-button-bg:white;
+  --main-h2-color-media:black;
+  --main-li-button-first:white;
+  --main-li-button-first-bg:black;
+  --main-h2-bg-media:white;
+  --main-li-button-hover:white;
+  --main-li-button-bg-hover:black;
+}
+
+main section:last-of-type {
 	max-width:24em;
 	margin:0 auto;
 }
 
-ul {
+main section:first-of-type iframe{
+  width: 100%;
+}
+
+main ul {
 	list-style:none;
-	margin:0;
+	margin:0 0 3em 0;
 	padding:0;
 }
 
-li {
+main section:last-of-type li{
 	display:flex;
-	flex-wrap:wrapa;
+	flex-wrap:wrap;
 	column-gap:1em;
-	
+	padding: 1em;
 	justify-content:space-between;
 	align-items:center;
+  border-top: 1px solid var(--main-li-border);
 }
 
-li h4 {
-	width:100%;
-	font-size:2em;
+main section:last-of-type li:last-of-type{
+  border-bottom: 1px solid var(--main-li-border);
+}
+
+main li p {
 	margin:0;
 }
 
-li p {
-	margin:0;
-}
-
-li div:nth-of-type(2) p {
+main li div:nth-of-type(2) p {
 	text-align:right;
 }
 
-li img {
+main li img {
 	display:none;
 }
 
+main h2{
+  color: var(--main-h2);
+  background-color: var(--main-h2-bg);
+  padding: .5em;
+  margin: .5em;
+  width: fit-content;
+}
+
+main section:nth-of-type(2) ul{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin: 2em;
+}
+
+main section:nth-of-type(2) ul li button{
+  padding: 0.3em;
+  color: var(--main-li-button);
+  background-color: var(--main-li-button-bg);
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+main section:nth-of-type(2) ul li:first-of-type button{
+  color: var(--main-li-button-first);
+  background-color: var(--main-li-button-first-bg);
+  
+}
+
+main section:nth-of-type(2) ul li button:hover{
+  color: var(--main-li-button-hover);
+  background-color: var(--main-li-button-bg-hover);
+}
+
+main section:last-of-type h2{
+  font-size: 1.5em;
+}
+
+/* Responsive */
 @media (min-width:44em) {
-	section {
+	main section:last-of-type {
 		max-width:50em;
 	}
 	
-	li h4 {
+	main li h4 {
 		width:unset;
 	}
 	
-	li img {
+	main li img {
 		display:block;
 		width:8em;
 	}
+  main h2{
+    color: var(--main-h2-color-media);
+    background-color: var(--main-h2-bg-media);
+    padding: 0;
+  }
 }
+

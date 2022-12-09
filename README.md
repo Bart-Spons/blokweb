@@ -227,8 +227,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   De website is overzichtelijk en prima te lezen met de shock. Als je de website wilt bedienen zijn de kleine links onderaan de footer lastig op te klikken aangezien je vingers aan het trillen zijn door het shock apparaat.
 
 
+<img src="readme-images/trillen.png" width="375px" alt="breakdown van de hele pagina">
+
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Door de felle kleur rood is de website door de meeste brillen goed te onderscheiden van de rest.
+
+<img src="readme-images/nadabril.png" width="375px" alt="breakdown van de hele pagina">
+<img src="readme-images/nadabril2.png" width="375px" alt="breakdown van de hele pagina">
 
 </details>
 
@@ -249,20 +254,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Ruben          | Ruud               | Bart         | 
+  | ---            | ---                | ---          | 
+  |- Link zoekbalk | - Tekst in een grid| - een slider | 
+  |- Orderen valk  | Alleen horizontaal | - Menu balk  |
+  |                | - Aparte body      |              | 
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Tekst/elementen beter stijlen doormiddel van grid
+  - Flexbox verbeteren/ elementen verplaatsen
+  - Links naar andere positie op een website
 
 </details>
 

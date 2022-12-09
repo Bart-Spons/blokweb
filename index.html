@@ -3,150 +3,132 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="jouw naam">
+    <meta name="author" content="Bart Spons">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Coffeecompany</title>
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-
     <link href="styles/style-algemeen.css" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet">
-
-
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
 <body>
-
     <header>
-        <img src="images/logo.png">
-
-        <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <nav inert>
             <ul>
                 <li>
+                    <!-- Zoekbalk zichtbaar zodra hamburgermenu wordt uitgeklapt-->
                     <form>
                         <input type="text" placeholder="Zoeken">
                     </form>
                 </li>
                 <li><a href="#"> Learn</a></li>
                 <li><a href="#">Barista worden</a></li>
-                <li><a href="#">Locaties</a></li>
+                <li><a href="locaties.html">Locaties</a></li>
                 <li><a href="#">Over ons</a></li>
                 <li><a href="#">Nieuws</a></li>
                 <li><a href="#">log in</a></li>
-
             </ul>
-            <a><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+        </nav>
+        <div>
+            <button>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="16px"
+                    viewBox="0 0 20 16" enable-background="new 0 0 20 16" xml:space="preserve">
+                    <g>
+                        <rect fill="#290201" width="20" height="2"></rect>
+                        <rect y="14" fill="#290201" width="20" height="2"></rect>
+                        <rect y="7" fill="#290201" width="20" height="2"></rect>
+                    </g>
+                </svg>
+            </button>
+            <button>Log in</button>
+            <button><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.677px" height="19.678px"
                     viewBox="0 0 19.677 19.678" enable-background="new 0 0 19.677 19.678" xml:space="preserve">
                     <path
                         d="M19.384,17.971l-3.217-3.217c1.248-1.556,1.999-3.526,1.999-5.671C18.166,4.075,14.092,0,9.083,0C4.075,0,0,4.075,0,9.083 c0,5.009,4.075,9.084,9.083,9.084c2.145,0,4.115-0.751,5.671-1.999l3.216,3.217c0.195,0.195,0.451,0.293,0.707,0.293 s0.512-0.098,0.707-0.293C19.774,18.994,19.774,18.361,19.384,17.971z M2,9.083C2,5.177,5.177,2,9.083,2 c3.905,0,7.083,3.177,7.083,7.083c0,3.906-3.178,7.084-7.083,7.084C5.177,16.167,2,12.989,2,9.083z">
                     </path>
-                </svg></a>
-        </nav>
-
-        <button>
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="16px"
-                viewBox="0 0 20 16" enable-background="new 0 0 20 16" xml:space="preserve">
-                <g>
-                    <rect fill="#290201" width="20" height="2"></rect>
-                    <rect y="14" fill="#290201" width="20" height="2"></rect>
-                    <rect y="7" fill="#290201" width="20" height="2"></rect>
-                </g>
-            </svg>
-        </button>
-
-
+                </svg></button>
+        </div>
     </header>
 
     <main>
+        <!-- De h1 is verborgen-->
         <h1>Coffeecompany</h1>
-
-
-        <section id="bolletjesAndLinkButtons" class="caroCarrousel"
-            aria-label="Voorbeeld met bolletjes en links/rechts-buttons" tabIndex="-1">
-            <!-- de id kun je zelf een naam geven en geef je mee in de js -->
+        <!-- Begin slider -->
+        <section id="everything" class="caroCarrousel" aria-label="Voorbeeld met alle opties aan" tabIndex="-1">
             <ul>
-
                 <li id="element1">
                     <section>
                         <figure>
                             <img src="images/slider1.png" alt="kittens" />
                         </figure>
-
                         <h2>Barista worden</h2>
                         <p>Word barista bij de CC. De leukste (bij-)baan van de stad! Klik op de link en solliciteer
                             direct.
                         </p>
                         <a>Solliciteren</a>
-
                     </section>
-
-
                     <p>Word barista bij de CC. De leukste (bij-)baan van de stad! Klik op de link en solliciteer direct.
                     </p>
                 </li>
-
                 <li id="element2">
                     <section>
                         <figure>
                             <img src="images/slider2.png" alt="kittens" />
                         </figure>
                         <h2>hallo den bosch</h2>
+                        <p>Op steenworp afstand van de Markt is CC Hinthamer geopend. Kom langs voor de lekkerste koffie
+                            en
+                            de enige echte Bossche Bol.</p>
                         <a>KOM LANGS</a>
                     </section>
-
-
                     <p>Op steenworp afstand van de Markt is CC Hinthamer geopend. Kom langs voor de lekkerste koffie en
                         de enige echte Bossche Bol.</p>
                 </li>
-
                 <li id="element3">
                     <section>
                         <figure>
                             <img src="images/slider3.png" alt="kittens" />
                         </figure>
                         <h2>managers gezocht!</h2>
+                        <p>Als Store Manager bij Coffeecompany creëer je een open cultuur waarin iedereen zich thuis
+                            voelt
+                            en kan groeien. Je geeft leiding aan een team barista’s en ben je verantwoordelijk voor je
+                            eigen
+                            koffiehuis.</p>
                         <a>Solliciteren</a>
                     </section>
-
                     <p>Als Store Manager bij Coffeecompany creëer je een open cultuur waarin iedereen zich thuis voelt
                         en kan groeien. Je geeft leiding aan een team barista’s en ben je verantwoordelijk voor je eigen
                         koffiehuis.</p>
                 </li>
-
                 <li id="element4">
                     <section>
                         <figure>
                             <img src="images/slider4.png" alt="kittens" />
                         </figure>
                         <h2>De eerste cc op zuid!</h2>
+                        <p>Hallo Rotterdam! Na 14 jaar steken we de brug over en openen we onze allereerste
+                            Coffeecompany op
+                            Zuid. Onze nieuwste (en vierde!) winkel in 010 is geopend in het iconische Las Palmas
+                            gebouw.
+                        </p>
                         <a>Kom langs</a>
                         <p></p>
                     </section>
-
-
                     <p>Hallo Rotterdam! Na 14 jaar steken we de brug over en openen we onze allereerste Coffeecompany op
                         Zuid. Onze nieuwste (en vierde!) winkel in 010 is geopend in het iconische Las Palmas gebouw.
                     </p>
                 </li>
-
-                <!--
-    <li id="element2"><img src="images/slider2.png" alt="kittens" /></li>
-    <li id="element3"><img src="images/slider3.png" alt="kittens" /></li>
-    <li id="element4"><img src="images/slider4.png" alt="kittens" /></li>
--->
             </ul>
-
             <a href="previous" aria-label="Naar het element aan de linkerkant"></a>
             <a href="next" aria-label="Naar het element aan de rechterkant"></a>
-
             <nav>
                 <ul>
                     <li><a href="#element1" aria-label="go to element1"></a></li>
@@ -155,54 +137,39 @@
                     <li><a href="#element4" aria-label="go to element4"></a></li>
                 </ul>
             </nav>
-
+            <button aria-label="start/stop autoscroll"></button>
         </section>
-
         <section>
-            <!--            <h2>   verbergen </h2>-->
-
+            <!-- Begin van de zes kopjes -->
             <ul>
                 <!-- 1e -->
                 <li>
-
                     <h2>van bes naar koffie</h2>
                     <p>De stappen die je moet zetten om koffie te produceren zijn op zich niet moeilijk. Je moet ze ...
                     </p>
-
                     <a href="#"><span data-txt="Proces" data-hvr="Lees meer"></span></a>
-
                 </li>
-
                 <!-- 2e -->
                 <li>
                     <h2>meet the makers - tostissimo's ...</h2>
                     <p>In de Meet the Makers serie geven we je een kijkje achter de Coffeecompany schermen. Deze kee...
                     </p>
-
-                    <a href=""><span data-txt="Tosti" data-hvr="Lees meer"></span></a>
-
-
+                    <a href=""><span data-txt="Tostichef" data-hvr="Lees meer"></span></a>
                 </li>
-
                 <!-- 3e -->
                 <li>
-
                     <h2>field trip - colombia</h2>
                     <p>Eind november vertrokken Roland en Jasper naar Colombia op zoek naar nieuwe koffies, partners...
                     </p>
                     <a href=""><span data-txt="Colombia" data-hvr="Lees meer"></span></a>
                 </li>
-
                 <!-- 4e -->
                 <li>
                     <h2>nu open: cc las palmas</h2>
                     <p>Hallo Rotterdam! Onze nieuwste (en vierde!) winkel in 010 is geopend op de Kop van Zuid: Coff...
                     </p>
                     <a href=""><span data-txt="News" data-hvr="Lees meer"></span></a>
-
-
                 </li>
-
                 <!-- 5e -->
                 <li>
 
@@ -212,25 +179,16 @@
                     </p>
                     <a href=""><span data-txt="News" data-hvr="Lees meer"></span></a>
                 </li>
-
                 <!-- 6e -->
                 <li>
-
                     <h2>opening soon: cc emmapassage (t...
                     </h2>
                     <p>Hallo Tilburg! In het spiksplinternieuwe stadshart openen wij dit najaar Coffeecompany Emmapa...
-
                     </p>
                     <a href=""><span data-txt="News" data-hvr="Lees meer"></span></a>
                 </li>
-
-
             </ul>
         </section>
-        <!-- <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2438.7924615110105!2d4.871295915749409!3d52.319768358801305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60a6df97f2305%3A0x19240860c2d473c3!2sUilenstede%2C%20Amstelveen!5e0!3m2!1snl!2snl!4v1669823293373!5m2!1snl!2snl"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe> -->
     </main>
 
     <footer>
@@ -255,14 +213,44 @@
                     <li>1001 RL Amsterdam</li>
                 </ul>
             </section>
-
         </section>
+
         <section>
             <h2>Bezoek ons op</h2>
             <ul>
-                <li><a href=""><img src="/images/facebook_icon.svg"></a></li>
-                <li><a href=""><img src="/images/twitter_icon.svg"></a></li>
-                <li><a href=""><img src="/images/insta_icon.svg"></a></li>
+                <li><a><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="34.736px"
+                            viewBox="0 0 35 34.736" enable-background="new 0 0 35 34.736" xml:space="preserve">
+                            <path fill="#280202" d="M0,34.737h35V0H0V34.737z M25.5,23.368c0,1.101-0.9,2-2,2h-3.035v-5.736h2.114v-2.499h-2.114v-1.306
+                   c0-0.329,0.121-0.566,0.535-0.566h1.579v-2.822h-1.767c-1.818,0-3.245,1.513-3.245,3.442v1.252h-1.916v2.499h1.916v5.736H11.5
+                   c-1.1,0-2-0.899-2-2v-12c0-1.101,0.9-2,2-2h12c1.1,0,2,0.899,2,2V23.368z" />
+                        </svg></a></li>
+                <li><a><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="34.738px"
+                            viewBox="0 0 35 34.738" enable-background="new 0 0 35 34.738" xml:space="preserve">
+                            <path fill="#280202" d="M0,34.738h35V0H0V34.738z M23.741,14.206c0.006,0.137,0.01,0.273,0.01,0.411
+                   c0,4.193-3.192,9.029-9.029,9.029c-1.793,0-3.461-0.525-4.865-1.426c0.248,0.028,0.501,0.045,0.757,0.045
+                   c1.487,0,2.855-0.509,3.941-1.359c-1.388-0.025-2.56-0.943-2.964-2.204c0.194,0.038,0.392,0.058,0.597,0.058
+                   c0.289,0,0.57-0.038,0.836-0.11c-1.452-0.292-2.546-1.574-2.546-3.112c0-0.013,0-0.026,0-0.039c0.428,0.237,0.918,0.38,1.438,0.396
+                   c-0.852-0.569-1.412-1.54-1.412-2.642c0-0.582,0.157-1.127,0.43-1.596c1.565,1.92,3.904,3.184,6.541,3.316
+                   c-0.054-0.232-0.082-0.475-0.082-0.724c0-1.753,1.421-3.174,3.173-3.174c0.912,0,1.738,0.386,2.316,1.003
+                   c0.723-0.143,1.401-0.407,2.016-0.77c-0.236,0.74-0.74,1.362-1.396,1.755c0.642-0.076,1.253-0.247,1.822-0.5
+                   C24.898,13.2,24.361,13.759,23.741,14.206" />
+                        </svg></a></li>
+                <li><a><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="34.738px"
+                            viewBox="0 0 35 34.738" enable-background="new 0 0 35 34.738" xml:space="preserve">
+                            <path fill="#280202" d="M23.033,11.192h-1.85c-0.34,0-0.615,0.275-0.615,0.616v1.85c0,0.34,0.275,0.616,0.615,0.616h1.85
+                   c0.341,0,0.617-0.276,0.617-0.616v-1.85C23.65,11.468,23.374,11.192,23.033,11.192" />
+                            <path fill="#280202" d="M17.486,20.438c1.702,0,3.083-1.38,3.083-3.082s-1.381-3.082-3.083-3.082s-3.082,1.38-3.082,3.082
+                   S15.784,20.438,17.486,20.438" />
+                            <path fill="#280202" d="M22.417,17.355c0,2.725-2.207,4.932-4.931,4.932c-2.723,0-4.93-2.207-4.93-4.932
+                   c0-0.426,0.06-0.838,0.162-1.233h-1.396v6.78c0,0.34,0.277,0.616,0.617,0.616h11.093c0.342,0,0.616-0.276,0.616-0.616v-6.78h-1.395
+                   C22.355,16.518,22.417,16.93,22.417,17.355" />
+                            <path fill="#280202"
+                                d="M0,34.738h35V0H0V34.738z M25.499,23.519c0,1.021-0.828,1.851-1.851,1.851H11.322
+                   c-1.021,0-1.848-0.829-1.848-1.851V11.192c0-1.021,0.827-1.85,1.848-1.85h12.327c1.021,0,1.851,0.828,1.851,1.85V23.519z" />
+                        </svg></a></li>
             </ul>
             <form>
                 <input type="text" placeholder="Nieuwsbrief email">
@@ -270,8 +258,6 @@
             </form>
         </section>
     </footer>
-
-
 
     <script defer src="scripts/script.js"></script>
 </body>
